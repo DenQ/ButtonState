@@ -76,52 +76,52 @@
     <article>
         <h4>Пример простой кнопки</h4>
         <a id="bootstrap-button-2" class="btn btn-primary" state="calm">Button 2</a>
-            <pre><code>
-                var buttonBootstrap2 = new BootstrapButton(null, {
-                "title": 'Bootstrap Button 2',
-                "titles": {
-                "calm": "Bootstrap Button 2 - calm",
-                "fire": "Bootstrap Button 2 - fire",
-                "waiting": "Bootstrap Button 2 - waiting",
-                "blocked": "Bootstrap Button 2 - blocked"
-                },
-                "owner": "#bootstrap-button-2",
-                "defaultState": "BootstrapButtonStateCalm",
-                "listener": {
-                actionClick: function (B) {
-                setTimeout(function(){
+<pre><code>
+var buttonBootstrap2 = new BootstrapButton(null, {
+    "title": 'Bootstrap Button 2',
+    "titles": {
+        "calm": "Bootstrap Button 2 - calm",
+        "fire": "Bootstrap Button 2 - fire",
+        "waiting": "Bootstrap Button 2 - waiting",
+        "blocked": "Bootstrap Button 2 - blocked"
+    },
+    "owner": "#bootstrap-button-2",
+    "defaultState": "BootstrapButtonStateCalm",
+    "listener": {
+        actionClick: function (B) {
+            setTimeout(function(){
                 B.setState( B.getStateCalm() );
-                }, 2000)
-                },
-                actionMouseOver: function (B) { },
-                actionMouseOut: function (B) { }
-                }
-                });
-            </code></pre>
+            }, 2000)
+    },
+    actionMouseOver: function (B) { },
+    actionMouseOut: function (B) { }
+    }
+});
+</code></pre>
     </article>
     <article>
         <h4>Пример кнопки как плагин для jQuery</h4>
         <a id="bootstrap-button-3" class="btn btn-primary" state="calm">Button 3</a>
 <pre><code>
-    $('#bootstrap-button-3').bs({
+$('#bootstrap-button-3').bs({
     "title": 'Bootstrap Button 3',
     "titles": {
-    "calm": "Bootstrap Button 3 - calm",
-    "fire": "Bootstrap Button 3 - fire",
-    "waiting": "Bootstrap Button 3 - waiting",
-    "blocked": "Bootstrap Button 3 - blocked"
+        "calm": "Bootstrap Button 3 - calm",
+        "fire": "Bootstrap Button 3 - fire",
+        "waiting": "Bootstrap Button 3 - waiting",
+        "blocked": "Bootstrap Button 3 - blocked"
     },
     "defaultState": "BootstrapButtonStateCalm",
     "listener": {
-    actionClick: function (B) {
-    setTimeout(function(){
-    B.setState( B.getStateBlocked() );
-    }, 2000)
-    },
-    actionMouseOver: function (B) { },
-    actionMouseOut: function (B) { }
+        actionClick: function (B) {
+            setTimeout(function(){
+                B.setState( B.getStateBlocked() );
+            }, 2000)
+        },
+        actionMouseOver: function (B) { },
+        actionMouseOut: function (B) { }
     }
-    })
+})
 </code></pre>
     </article>
 </section>
