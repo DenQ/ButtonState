@@ -1,0 +1,12 @@
+button.ab[state="calm"]{
+    /*background-color: #bababa;*/
+}
+button.ab[state="blocked"]{
+    background-color: silver;
+}
+button.ab[state="fire"]{
+    background-color: orange;
+}
+button.ab[state="waiting"]{
+    background-color: brown;
+}
