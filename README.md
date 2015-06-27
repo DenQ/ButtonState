@@ -6,7 +6,10 @@ Some this project it contains plugin for jquery library.
 Project has writing on TDD methodology with using jasmine js framework for testing.
 
 language: CoffeeScript
-status: paused
+Status: paused
 
 UML diagram:
 ![Image alt](https://github.com/DenQ/ButtonState/raw/master/uml/ButtonState.png)
+
+Example of use, can see click next link:
+http://denq.github.io/ButtonState/
